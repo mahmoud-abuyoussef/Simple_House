@@ -1,0 +1,291 @@
+/* Start My Framework */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ccc;
+}
+
+.container {
+  width: 95%;
+  margin: auto;
+  background-color: #fff;
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: 100%;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+p {
+  line-height: 1.6;
+}
+
+/* End My Framework */
+
+/* Start Header */
+
+header {
+  display: flex;
+  align-items: flex-end;
+  background-image: url("../images/simple-house-01.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 460px;
+}
+
+header nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+header nav .logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  font-size: 20px;
+}
+
+header nav .logo .left {
+  margin-right: 10px;
+}
+
+header nav .logo .left a img {
+  width: 80px;
+}
+
+header nav .logo h1 {
+  margin-bottom: 10px;
+}
+
+header nav .right-links ul {
+  display: flex;
+  padding-left: 0;
+}
+
+header nav .right-links ul li {
+  padding: 10px;
+  border-bottom: 1px solid transparent;
+}
+
+header nav .right-links ul li a {
+  color: #fff;
+}
+
+header nav .right-links ul li:hover {
+  border-bottom-color: #ccc;
+}
+
+@media (max-width: 576px) {
+  header nav {
+    display: block;
+  }
+  header nav .logo {
+    width: fit-content;
+  }
+}
+
+/* End Header */
+
+/* Start Main Section */
+.main {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.main p {
+  width: 50%;
+  margin: 30px auto;
+}
+
+.main .list-food ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.main .list-food ul li {
+  width: 100px;
+  padding: 10px;
+  border: 1px solid #045e3b;
+  margin: 10px;
+  transition: all 0.5s;
+}
+
+.main .list-food ul .active,
+.main .list-food ul .active a {
+  background-color: #045e3b;
+  color: #fff;
+}
+
+.main .list-food ul li a {
+  color: #045e3b;
+}
+
+.main .list-food ul li:hover {
+  background-color: #045e3b;
+  cursor: pointer;
+}
+
+.main .list-food ul li:hover a {
+  color: #fff;
+}
+/* End Main Section */
+
+/* Start Section Food Items */
+.food .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.food article {
+  width: 250px;
+  margin: 20px 10px;
+}
+
+.food article figure {
+  width: 100%;
+  overflow: hidden;
+}
+
+.food article img {
+  width: 100%;
+  transition: all 1s;
+}
+
+.food article img:hover {
+  transform: scale(1.1);
+}
+
+.food article figcaption {
+  width: 100%;
+}
+
+.food article figcaption h3,
+p,
+span {
+  margin: 10px 0;
+}
+
+.food article figcaption h3 {
+  color: #6484be;
+}
+
+.food article figcaption span {
+  color: #045e3b;
+}
+
+@media (max-width: 576px) {
+  .food .container {
+    justify-content: center;
+  }
+  .food article {
+    width: 250px;
+  }
+}
+
+@media (min-width: 576px) {
+  .food .container {
+    justify-content: center;
+  }
+  .food article {
+    width: calc((100% - 40px) / 2);
+  }
+}
+
+@media (min-width: 768px) {
+  .food .container {
+    justify-content: space-between;
+  }
+  .food article {
+    width: calc((100% - 60px) / 3);
+  }
+}
+
+@media (min-width: 992px) {
+  .food article {
+    width: calc((100% - 80px) / 4);
+  }
+}
+
+/* End Section Food Items */
+
+/* Start Article */
+
+article .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 40px 0;
+}
+
+article .container .photo {
+  width: 50%;
+}
+
+article .container .photo img {
+  width: 100%;
+}
+
+article .container .text {
+  width: 50%;
+  padding: 0 100px 0 40px;
+}
+
+article .container .text a {
+  color: #00f;
+}
+
+article .container .text h3 {
+  color: #6484be;
+}
+
+article .container .text .read {
+  display: flex;
+  justify-content: end;
+}
+
+article .container .text .read button {
+  border: 1px solid #ccc;
+  background-color: transparent;
+  font-size: 17px;
+  padding: 10px;
+  color: #333;
+}
+
+@media (max-width: 576px), (max-width: 767px) {
+  article .container .photo,
+  article .container .text {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* End Article */
+
+/* Start Footer */
+footer {
+  padding: 20px 0;
+  text-align: center;
+  color: #333;
+}
+/* End Footer */
